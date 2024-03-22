@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .section-min-height {
+        min-height: calc(100vh - 68px)
+    }
+
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    }
+
+
+    }
+    
+
+
+@layer base {
+    html 
+    {
+        font-family: "Mulish", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+
+    .weeh{      background: linear-gradient(
+        359.8deg,
+        #34a853 0.12%,
+        rgba(52, 168, 83, 0) 99.77%
+      );}
+
+    .hoverweeh{
+        background: transparent
+        linear-gradient(180deg, rgba(180, 210, 69, 0.6), rgba(55, 169, 82, 0.6)) 0 0
+        no-repeat;
+    }
+
+    .girini {
+        background-color: #35a555;
+    }
+
+    .footie {
+        background-color: #2c3134;
+    }
+
+
+}

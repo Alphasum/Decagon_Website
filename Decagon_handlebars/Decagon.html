@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decagon</title>
+  <link rel="stylesheet" href="/build/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="output"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
+<script src="/index.js"></script>
+<script src="/base.js"></script>
+<script src="/nav.js"></script>
+<script src="/button.js"></script>
+<script src="/text_center.js"></script>
+<script src="/footer.js"></script>
+<script src="/main.js"></script>
+
+
+<script>
+    console.log(Handlebars.templates);
+    var template = Handlebars.templates.index;
+    document.getElementById('output').innerHTML = template({doesWhat: 'Decagon'});
+</script>
+
+</body>
+</html>
